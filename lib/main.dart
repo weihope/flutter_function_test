@@ -5,11 +5,17 @@ import 'package:pcwebandmobileweb/mouseregionpage.dart';
 import 'dart:html' as html;
 
 import 'package:pcwebandmobileweb/secondcustomappbar.dart';
+import 'package:pcwebandmobileweb/testing.dart';
 
 void main() {
   //runApp(const MyApp());
   //runApp(const MouseRegionPage());
-  runApp(const SecondCustomAppbar());
+  //runApp(const SecondCustomAppbar());
+  runApp(
+    const MaterialApp(
+      home: Testing(), // 确保 Testing 组件被 MaterialApp 包裹
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
